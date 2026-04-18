@@ -1,0 +1,109 @@
+site_name: Hermes Agent 中文指南
+site_description: 从零基础到完全掌握 Nous Research 的 Hermes Agent —— 一本由浅入深的中文说明书
+site_author: BeamusWayne
+site_url: https://beamuswayne.github.io/hermes-agent-guide/
+repo_url: https://github.com/BeamusWayne/hermes-agent-guide
+repo_name: BeamusWayne/hermes-agent-guide
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  language: zh
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - navigation.indexes
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+    - toc.follow
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: amber
+      accent: deep orange
+      toggle:
+        icon: material/brightness-7
+        name: 切换到暗色模式
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: amber
+      accent: deep orange
+      toggle:
+        icon: material/brightness-4
+        name: 切换到亮色模式
+  icon:
+    repo: fontawesome/brands/github
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - def_list
+  - footnotes
+  - tables
+  - toc:
+      permalink: true
+      toc_depth: 3
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.caret
+  - pymdownx.tilde
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+nav:
+  - 首页: index.md
+  - 前言:
+    - preface/index.md
+    - 为什么读这本书: preface/why-this-book.md
+    - 怎么读: preface/how-to-read.md
+  - 第一部 · 入门:
+    - part-1-entry/index.md
+    - 0. Hermes 是什么: part-1-entry/00-what-is-hermes.md
+    - 1. 五大支柱心智模型: part-1-entry/01-the-five-pillars.md
+    - 2. 安装: part-1-entry/02-install.md
+    - 3. 第一次对话: part-1-entry/03-first-conversation.md
+    - 4. 必学命令清单: part-1-entry/04-key-commands.md
+  - 第二部 · 日常:
+    - part-2-daily/index.md
+  - 第三部 · 精通:
+    - part-3-mastery/index.md
+  - 第四部 · 内核:
+    - part-4-internals/index.md
+  - 第五部 · 研究:
+    - part-5-research/index.md
+  - 附录:
+    - appendix/index.md
+
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/BeamusWayne/hermes-agent-guide
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/NousResearch
+
+copyright: Copyright &copy; 2026 BeamusWayne · 基于 Hermes Agent v0.8.0
