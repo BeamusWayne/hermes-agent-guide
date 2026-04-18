@@ -1,5 +1,5 @@
 ---
-hermes_version: 0.8.0
+hermes_version: 0.10.0
 title: 安装
 ---
 
@@ -180,7 +180,7 @@ hermes doctor
 ```
 [✓] Python 3.11.9
 [✓] uv 0.5.12
-[✓] hermes 0.8.0
+[✓] hermes 0.10.0
 [✓] ~/.hermes/ exists
 [!] No API keys configured (run `hermes setup` to add)
 [✓] 42 tools available

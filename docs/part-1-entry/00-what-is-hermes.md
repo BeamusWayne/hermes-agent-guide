@@ -1,5 +1,5 @@
 ---
-hermes_version: 0.8.0
+hermes_version: 0.10.0
 title: Hermes 是什么
 ---
 
@@ -41,7 +41,7 @@ graph LR
 
 | 维度 | ChatGPT 等聊天产品 | Cursor 等编程助手 | **Hermes** |
 |---|---|---|---|
-| **主入口** | 网页 / 桌面 app | 特定 IDE | CLI + 13+ 消息平台 |
+| **主入口** | 网页 / 桌面 app | 特定 IDE | CLI + 16+ 消息平台 + 本地 Web Dashboard |
 | **模型选择** | 供应商锁定 | 有限可选 | **200+ 模型任意切换** |
 | **运行位置** | 云端 | 本地 IDE | **本地 / VPS / serverless / 集群** |
 | **学习能力** | 无(或浅) | 无 | **技能 + 记忆 + 会话搜索 + 用户建模** |
@@ -81,7 +81,7 @@ graph LR
     ```bash
     $ hermes
     ╭─── Hermes Agent ──────────────────╮
-    │   ☤  v0.8.0  · anthropic/claude... │
+    │   ☤  v0.10.0  · anthropic/claude... │
     ╰────────────────────────────────────╯
 
     > 帮我看下这个 Python 项目的结构,挑出最可能有 bug 的文件
@@ -113,18 +113,27 @@ graph LR
 
 ## 它的版本和发展
 
-当前本指南基于 **Hermes Agent v0.8.0**。
+当前本指南基于 **Hermes Agent v0.10.0**。
 
 项目迭代非常快,历史发布节奏大致是每 1-2 个月一个 minor 版本:
 
-| 版本 | 发布大致时间 | 重要新特性 |
+| 版本 | 发布时间 | 重要新特性 |
 |---|---|---|
 | v0.2.0 | 2025 夏 | 初始公开发布 |
 | v0.3-0.5 | 2025 秋 | 消息网关扩展、MCP 集成、Profile |
 | v0.6-0.7 | 2025 冬 | 皮肤系统、Honcho 集成、RL 环境 |
-| v0.8.0 | 2026 初 | 当前版本 |
+| v0.8.0 | 2026 初 | context compaction、`/compress <focus>` |
+| **v0.9.0** | **2026-04-13** | **Web Dashboard、Fast Mode (`/fast`)、iMessage/WeChat、Termux/Android、16 平台、`hermes backup/import`、`/debug`、xAI/MiMo providers、可插拔 Context Engine** |
+| **v0.10.0** | **2026-04-16** | **Nous Tool Gateway —— Portal 订阅用户免额外 key 直接用 web 搜索 / 图像生成 / TTS / 浏览器自动化(当前版本)** |
 
 所以读这本书时,如果某个命令行为跟描述不一致,先用 `hermes --version` 检查版本。
+
+!!! success "v0.9 - v0.10 的五大值得关注"
+    1. **本地 Web Dashboard** —— 浏览器里配置 / 监控 / 管理 agent,不碰配置文件
+    2. **`/fast` Fast Mode** —— OpenAI / Anthropic 优先队列,延迟显著降低
+    3. **Nous Tool Gateway** —— 付费 Portal 订阅自带工具集,零额外 key
+    4. **Termux 一等公民** —— Android 手机原生支持,装机路径正式化
+    5. **新 providers 大扩展** —— xAI (Grok) / Xiaomi MiMo / NVIDIA NIM / Ollama Cloud / Google Gemini CLI OAuth 全部原生支持
 
 !!! tip "想在最新功能上尝鲜?"
     克隆 GitHub 主分支装开发版:

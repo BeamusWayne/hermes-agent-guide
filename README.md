@@ -4,7 +4,7 @@
 
 [![Deploy](https://github.com/BeamusWayne/hermes-agent-guide/actions/workflows/deploy.yml/badge.svg)](https://github.com/BeamusWayne/hermes-agent-guide/actions/workflows/deploy.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Based on](https://img.shields.io/badge/Hermes%20Agent-v0.8.0-FFD700.svg)](https://github.com/NousResearch/hermes-agent)
+[![Based on](https://img.shields.io/badge/Hermes%20Agent-v0.10.0-FFD700.svg)](https://github.com/NousResearch/hermes-agent)
 
 ## 📖 在线阅读
 
@@ -68,7 +68,7 @@ mkdocs build --strict
 
 - **指南内容**:MIT License(见 `LICENSE`)
 - **Hermes Agent 本体**:MIT License,版权归 [Nous Research](https://nousresearch.com)
-- **基于版本**:Hermes Agent v0.8.0(每篇文档会在 frontmatter 标注精确锚点版本)
+- **基于版本**:Hermes Agent v0.10.0(每篇文档会在 frontmatter 标注精确锚点版本)
 
 ---
 

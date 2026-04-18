@@ -1,5 +1,5 @@
 ---
-hermes_version: 0.8.0
+hermes_version: 0.10.0
 title: 必学命令清单
 ---
 
@@ -280,6 +280,34 @@ Cache hit rate: 87%
 > /help                    # 所有命令
 > /help memory             # 某个命令的详细帮助
 ```
+
+---
+
+## 🆕 v0.9 - v0.10 新增的值得一学的命令
+
+除了上面的 Top 10,这些是最近版本加入的,掌握了能立刻少写很多字:
+
+| 命令 | 类型 | 做什么 |
+|---|---|---|
+| `/fast` | slash | 切换 Fast Mode(OpenAI / Anthropic 优先队列,延迟更低) |
+| `/debug` | slash | 一键生成诊断报告(会话、环境、配置) |
+| `/status` | slash | 查看当前会话 / agent / 模型状态概览 |
+| `/statusbar` | slash | 开关 TUI 状态栏 |
+| `/yolo` | slash | 放飞模式 —— 跳过所有命令审批(**仅在沙箱环境用**) |
+| `/compact` / `/compress` | slash | 上下文压缩(`/compress <focus>` 可带主题) |
+| `/snapshot` · `/rollback` | slash | 会话快照与回滚 |
+| `/resume` | slash | 恢复之前的会话 |
+| `/reload-mcp` | slash | 重载 MCP 服务器,不用重启 agent |
+| `hermes backup` | CLI | 备份配置 / 会话 / 技能 / 记忆到单个归档 |
+| `hermes import` | CLI | 从备份归档恢复(跨机迁移神器) |
+| `hermes debug share` | CLI | 诊断报告上传到 pastebin,方便求助 |
+| `hermes plugins` | CLI | 插件系统管理(v0.9+ 可插拔 Context Engine 等) |
+| `hermes dashboard` | CLI | 启动本地 Web Dashboard(浏览器里管理 agent) |
+| `hermes skills reset` | CLI | 把内置技能恢复到干净状态 |
+
+!!! tip "特别推荐 `hermes backup`"
+    换机器、升级系统、折腾前 —— **先 `hermes backup -o ~/hermes-snapshot.tar.gz`**。
+    出问题时 `hermes import ~/hermes-snapshot.tar.gz` 几秒复原。
 
 ---
 

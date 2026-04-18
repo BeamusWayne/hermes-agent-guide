@@ -1,5 +1,5 @@
 ---
-hermes_version: 0.8.0
+hermes_version: 0.10.0
 title: 第一次对话
 ---
 
@@ -51,7 +51,7 @@ hermes setup
 
 1. **选模型提供商**(OpenRouter / OpenAI / Anthropic / Nous Portal / z.ai / ...)
 2. **输入 API Key**(如果你没有,向导会给链接让你申请)
-3. **选默认模型**(推荐从 Claude Sonnet 4.6 或 GPT-4o 起步)
+3. **选默认模型**(推荐从 Kimi K2.5 / Claude Sonnet 4.6 / Claude Opus 4.7 起步)
 4. **工具开关**(先全部默认,后续可改)
 5. **消息网关**(新手跳过,先只用 CLI)
 
@@ -96,7 +96,7 @@ hermes
 
 ```
 ╭─ Hermes Agent ──────────────────────────────╮
-│  ☤  v0.8.0                                   │
+│  ☤  v0.10.0                                   │
 │  Model: anthropic/claude-sonnet-4-6          │
 │  Platform: cli · Profile: default            │
 ╰──────────────────────────────────────────────╯
@@ -192,8 +192,9 @@ hermes model openrouter/google/gemini-2.5-flash      # 直接切
 
 !!! tip "省钱小技巧"
     - 日常闲聊:`gemini-2.5-flash` / `deepseek-chat`(便宜)
-    - 写代码:`claude-sonnet-4-6`(贵但准)
-    - 复杂推理:`claude-opus-4-6`(最贵,最强)
+    - 写代码:`claude-sonnet-4-6` / `kimi-k2.5`(贵但准)
+    - 复杂推理:`claude-opus-4-7`(最贵,最强)
+    - **付费 Nous Portal 订阅用户**:直接选 Nous Portal,模型 + 工具(web 搜索 / 图像 / TTS / 浏览器)一套搞定,免额外 key
 
     `hermes model` 命令让你随时按需切换,不锁死。
 

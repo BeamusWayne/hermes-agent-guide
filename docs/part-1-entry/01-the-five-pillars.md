@@ -1,5 +1,5 @@
 ---
-hermes_version: 0.8.0
+hermes_version: 0.10.0
 title: 五大支柱心智模型
 ---
 
@@ -88,7 +88,7 @@ graph LR
 
 ## 支柱二 · 🕸️ 多栖身体(Multi-Platform Body)
 
-**一句话**:同一个 Hermes 大脑,长在 13+ 个身体里。你在哪就在哪和它说话。
+**一句话**:同一个 Hermes 大脑,长在 16+ 个身体里。你在哪就在哪和它说话。
 
 ### 身体形态
 
@@ -107,24 +107,30 @@ graph TB
         E[Email]
         HA[Home Assistant]
         M[Matrix]
+        MM[Mattermost]
         BB[BlueBubbles iMessage]
+        WX[微信 Weixin]
         DT[钉钉]
         FS[飞书]
-        WC[企业微信]
+        WC[企业微信 WeCom]
+        QQ[QQBot]
         SMS[SMS]
+        WH[Webhook]
     end
 
     subgraph "CLI 身体"
         C[终端 TUI]
     end
 
-    subgraph "IDE 身体"
+    subgraph "其他身体"
         A[ACP: VS Code / Zed / JetBrains]
+        WD[本地 Web Dashboard]
     end
 
-    G --> T & D & S & W & SG & E & HA & M & BB & DT & FS & WC & SMS
+    G --> T & D & S & W & SG & E & HA & M & MM & BB & WX & DT & FS & WC & QQ & SMS & WH
     C -.独立运行.-> G
     A -.独立运行.-> G
+    WD -.浏览器侧.-> G
 ```
 
 所有身体共享:
@@ -273,8 +279,11 @@ graph TB
         M1[Nous Portal]
         M2[OpenRouter 200+]
         M3[OpenAI / Anthropic]
-        M4[z.ai / Kimi / MiniMax]
-        M5[自托管端点]
+        M4[xAI Grok / Xiaomi MiMo]
+        M5[z.ai / Kimi / MiniMax]
+        M6[NVIDIA NIM / Ollama Cloud]
+        M7[Google Gemini CLI OAuth]
+        M8[自托管端点]
     end
 
     subgraph "可插拔 2 · 技能层"
@@ -286,19 +295,21 @@ graph TB
     subgraph "可插拔 3 · 工具层"
         T1[40+ 内置工具]
         T2[MCP 服务器]
-        T3[自写工具]
+        T3[Nous Tool Gateway<br/>订阅即用]
+        T4[自写工具 / 插件]
     end
 
     subgraph "可插拔 4 · 平台层"
-        P1[13+ 消息平台]
+        P1[16+ 消息平台]
         P2[ACP IDE]
-        P3[自写平台适配器]
+        P3[本地 Web Dashboard]
+        P4[自写平台适配器]
     end
 
-    H --> M1 & M2 & M3 & M4 & M5
+    H --> M1 & M2 & M3 & M4 & M5 & M6 & M7 & M8
     H --> S1 & S2 & S3
-    H --> T1 & T2 & T3
-    H --> P1 & P2 & P3
+    H --> T1 & T2 & T3 & T4
+    H --> P1 & P2 & P3 & P4
 ```
 
 ### 最关键的:MCP(Model Context Protocol)
