@@ -89,6 +89,13 @@ nav:
     - 4. 必学命令清单: part-1-entry/04-key-commands.md
   - 第二部 · 日常:
     - part-2-daily/index.md
+    - 5. 模型选择策略: part-2-daily/05-model-strategy.md
+    - 6. 工具总览: part-2-daily/06-tools-overview.md
+    - 7. 记忆系统深入: part-2-daily/07-memory-deep-dive.md
+    - 8. 技能系统深入: part-2-daily/08-skills-deep-dive.md
+    - 9. 会话搜索与上下文: part-2-daily/09-session-search.md
+    - 10. 上下文压缩: part-2-daily/10-context-compression.md
+    - 11. 个性与提示工程: part-2-daily/11-personality.md
   - 第三部 · 精通:
     - part-3-mastery/index.md
   - 第四部 · 内核:
