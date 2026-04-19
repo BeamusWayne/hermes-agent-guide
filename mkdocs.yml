@@ -98,12 +98,42 @@ nav:
     - 11. 个性与提示工程: part-2-daily/11-personality.md
   - 第三部 · 精通:
     - part-3-mastery/index.md
+    - 12. 消息网关总览 + Telegram: part-3-mastery/12-gateway-telegram.md
+    - 13. Discord / Slack 网关: part-3-mastery/13-gateway-discord-slack.md
+    - 14. 其他平台 + 中文生态: part-3-mastery/14-gateway-others.md
+    - 15. 定时任务 cron 深入: part-3-mastery/15-cron-deep-dive.md
+    - 16. Profile 多实例 + 备份: part-3-mastery/16-profile-backup.md
+    - 17. 配置文件详解: part-3-mastery/17-config-yaml.md
+    - 18. 皮肤定制: part-3-mastery/18-skin-customize.md
+    - 19. MCP 集成 + Web Dashboard: part-3-mastery/19-mcp-dashboard.md
+    - 20. Tool Gateway + Fast Mode: part-3-mastery/20-gateway-fast.md
+    - 21. 安全权限 + 插件系统: part-3-mastery/21-security-plugins.md
   - 第四部 · 内核:
     - part-4-internals/index.md
+    - 22. 项目结构总览: part-4-internals/22-project-structure.md
+    - 23. AIAgent 类详解: part-4-internals/23-aiagent-class.md
+    - 24. 工具注册机制: part-4-internals/24-tool-registry.md
+    - 25. Slash 命令系统: part-4-internals/25-slash-commands.md
+    - 26. 消息网关架构: part-4-internals/26-gateway-arch.md
+    - 27. Prompt Caching 的边界: part-4-internals/27-prompt-caching.md
+    - 28. Profile 工作原理: part-4-internals/28-profile-internals.md
+    - 29. Context Compression 算法: part-4-internals/29-compression-algo.md
+    - 30. 测试策略: part-4-internals/30-testing.md
+    - 31. 已知坑点与防御: part-4-internals/31-pitfalls.md
   - 第五部 · 研究:
     - part-5-research/index.md
+    - 32. 批量轨迹生成: part-5-research/32-batch-trajectories.md
+    - 33. 轨迹压缩: part-5-research/33-trajectory-compression.md
+    - 34. Atropos RL 环境: part-5-research/34-atropos-rl.md
+    - 35. Agent 能力评估: part-5-research/35-agent-eval.md
   - 附录:
     - appendix/index.md
+    - A. CLI 命令完整参考: appendix/A-cli-reference.md
+    - B. Slash 命令完整参考: appendix/B-slash-reference.md
+    - C. 环境变量完整参考: appendix/C-env-vars.md
+    - D. 故障排查手册: appendix/D-troubleshooting.md
+    - E. 术语表: appendix/E-glossary.md
+    - F. 与 OpenClaw 迁移对照: appendix/F-openclaw-migration.md
 
 extra:
   generator: false
